@@ -1,61 +1,26 @@
-<!DOCTYPE html
-  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <title>Chetana Natya Niketana</title>
   <link rel="stylesheet" type="text/css" href="css/style.css" />
-  <!--[if lt IE 7.]>
-
-<script defer type="text/javascript" src="scripts/pngfix.js"></script>
-
-<![endif]-->
-
-
+  <link rel="icon" type="image/jpg" href="/images/favicon.jpg">
+  <script src="js/script.js"></script>
 </head>
 
 <body>
-  <div id="main">
-    <!-----------------header start here------------->
-    <div class="section">
-      <div class="logo">
-        <a href="https://www.chetananatyaniketana.in/"><img src="images/CNN-logo.png" /> </a>
-      </div>
-      <div class="link">
-        <a href="Announcement.html" style="background-image:url(images/announcement.jpg);">Announcement </a>
-        <a href="ContactUs.html" style="background-image:url(images/contact.jpg);">Contact Us</a>
-      </div>
-    </div>
+    <!-----------------Start Common Header------------->
+    <div id="headerFile"></div>
+    <!-----------------End Common Header------------->
 
-    <div class="section" style="margin-top:20px;">
-      <div class="nav">
-        <ul>
-          <li><a href="Awards.html">Awards</a></li>
-          <li><a href="PhotoGallery.html">Photo Gallery</a></li>
-          <li><a href="StudentsCorner.html">Students Corner</a></li>
-          <li><a href="ClassSchedule.html" style="background-image:url(images/button-bgr-hover.jpg)">Class Schedule</a>
-          </li>
-          <li><a href="Courses.html">Courses</a></li>
-          <li><a href="aboutus.html">About Us</a></li>
-          <li><a href="index.html">Home</a></li>
-        </ul>
-      </div>
-    </div>
-    <!-----------------header end here------------->
-
-
-
-    <!-----------------body start here------------->
-
-    <div class="section" style="margin-top:25px;">
-
+    <!-----------------main div starts------------->
+    <div id="main">
+        <div class="section">
       <div class="left">
-        <h1><span style="color:#ffb400">Schedule</span> for Classes</h1><br />
-
-        <p>You can see below for detailed schedule and class information at CNN. <br /><br />
-
-        <table width="477" border="0" cellspacing="5" cellpadding="0">
+        <h1><span style="color:#ffb400">Schedule</span> for Classes</h1>
+        <p>You can see below for detailed schedule and class information at CNN.</p>
+        <table width="477" cellspacing="5" cellpadding="0" style="padding-bottom: 0.75rem;">
           <tr>
             <td width="55" style="color:#FC0;">Sr. No.</td>
             <td width="120" style="color:#FC0;">Course Name</td>
@@ -86,9 +51,9 @@
             <td>Fine Arts</td>
             <td>Weekly 2 days & 1 hr duration.</td>
           </tr>
-        </table><br /><br />
+        </table>
 
-        <strong>Rules and Regulations at CNN</strong>
+       <p style="font-weight: bold; padding-bottom: 0;">Rules and Regulations at CNN</p>
         <ul>
           <li>Dance & Music classes will be held weekly two days, as per the days given to a student.</li>
           <li>Student has to attend the class 5 minutes early with her notebook & compulsory with her neat uniform.</li>
@@ -106,44 +71,22 @@
           <li>Students should wear the provided uniform for dance & music i.e. Salwar & Skirt compulsory.</li>
           <li>Girls must wear bindi & bangles compulsory during Dance & Music class hours. </li>
         </ul>
-        <br /><br />
-
-
         </p>
 
       </div>
-
-
       <div class="right">
         <img src="images/clssdh.jpg" alt="CNN" width="355" height="458" />
       </div>
-
     </div>
-
     <!-----------------body ends here------------->
-
   </div><!-----------------main div close------------->
-
-  <!-----------------footer start here------------->
-  <div id="bottom">
-    <div class="footer">
-      <div class="section">
-        <div class="copy" style="width:400px; float:left; margin-top:8px;">
-          &copy; 2024 Chetana Natya Niketana - All rights reserved.
-        </div>
-        <div class="link-bottom">
-          <span>Follow Us:</span>
-          <a href="https://twitter.com/#!/Cnatyaniketan" target="_blank"><img src="images/twiter.jpg" /></a>
-          &nbsp;&nbsp;|&nbsp;&nbsp;
-          <a href="FeeStructure.html">Fee Structure</a> &nbsp;&nbsp;|&nbsp;&nbsp;
-          <a href="Legal.html">Legal</a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-----------------footer ends here------------->
-
+  <!-----------------Start Common Footer------------->
+  <div id="footerFile"></div>
+  <!-----------------End Common Footer------------->
+  
+  <script>
+    highlightTabElement("#classScheduleTab");
+</script>
 
 </body>
-
 </html>

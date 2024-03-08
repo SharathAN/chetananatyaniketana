@@ -4,9 +4,6 @@
 body {
     margin: 0;
     padding: 0;
-    background-image: url(../images/body-bgr.jpg);
-    background-repeat: repeat-x;
-    background-position: top;
     color: #9a9a9a;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 12px;
@@ -15,9 +12,12 @@ body {
 
 p {
     margin: 0;
-    padding: 0;
-    font-weight: 100;
-    text-align: justify;
+    padding-top: 0.25rem;
+    padding-right: 0.25rem;
+    padding-bottom: 0.5rem;
+    padding-left: 0.25rem;
+    font-weight: normal;
+    text-align: left;
 }
 
 h1 {
@@ -26,26 +26,37 @@ h1 {
     padding: 0;
     font-weight: bold;
     color: #ffffff;
-    height: 30px;
+    padding-top: 0.25rem;
+    padding-right: 0.25rem;
+    padding-bottom: 1rem;
+    padding-left: 0.25rem;
+    text-align: left;
     background-image: url(../images/line.jpg);
     background-repeat: repeat-x;
     background-position: bottom;
 }
 
-h2,
-h3,
-h4 {
-    font-size: 13px;
+h2 {
+    font-size: 14px;
     margin: 0;
-    padding: 0;
+    padding-top: 0.5rem;
+    padding-right: 0.25rem;
+    padding-bottom: 0.25rem;
+    padding-left: 0.25rem;
     font-weight: bold;
     color: #ffffff;
-    height: 20px;
-    text-align: right;
+    text-align: left;
 }
 
-h3,
-h4 {
+h3 {
+    font-size: 12px;
+    margin: 0;
+    padding-top: 0.5rem;
+    padding-right: 0.25rem;
+    padding-bottom: 0.25rem;
+    padding-left: 0.25rem;
+    font-weight: bold;
+    color: #ffffff;
     text-align: left;
 }
 
@@ -56,9 +67,33 @@ h4 {
 
 .section {
     width: 960px;
-    margin: 0;
+    margin: 10px 5px;
     float: left;
 }
+
+.header-section {
+    width: 100%;
+    background-image: url(../images/body-bgr.jpg);
+    background-repeat: repeat-x;
+    background-position: top;
+    float: left;
+    padding-top: 10px;
+    padding-right: 5px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+}
+
+.footer-section {
+    width: 100%;
+    background-image: url(../images/footer-bgr.jpg);
+    background-repeat: repeat-x;
+    float: left;
+    padding-top: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+}
+/* san */
 
 .box,
 .comment {
@@ -95,43 +130,43 @@ h4 {
 .logo {
     float: left;
     width: 180px;
-    margin-top: 10px;
+    margin-top: 1px;
 }
 
-.link {
+.nav-link {
     float: right;
     width: 383px;
     height: 23px;
-    margin-top: 20px;
+    margin: 10px 5px;
 }
 
-.link a {
+.nav-link a {
     float: left;
-    margin: 0 0 0 25px;
+    margin: 10px 5px;
     text-decoration: none;
     color: #FFF;
     background-repeat: no-repeat;
     height: 18px;
-    padding: 5px 0 0 30px;
+    padding: 5px 30px;
 }
 
-.link a:hover {
+.nav-link a:hover {
     color: #ffb400;
 }
 
-.nav {
+.nav-bar {
     float: right;
     width: 800px;
-    margin: 2px 0px 0px 0px;
+    margin: 20px 5px 5px;
 }
 
-.nav ul {
+.nav-bar ul {
     list-style-type: none;
     margin: 0;
     display: inline;
 }
 
-.nav ul li {
+.nav-bar ul li {
     list-style-type: none;
     margin-left: 2px;
     display: block;
@@ -140,7 +175,7 @@ h4 {
     padding: 0;
 }
 
-.nav ul li a {
+.nav-bar ul li a {
     font-size: 12px;
     text-decoration: none;
     color: #7a0000;
@@ -152,7 +187,7 @@ h4 {
     display: block;
 }
 
-.nav ul li a:hover {
+.nav-bar ul li a:hover {
     color: #000000;
     background-image: url(../images/button-bgr-hover.jpg);
 }
@@ -178,32 +213,48 @@ h4 {
     padding: 0;
 }
 
-#bottom {
-    width: 100%;
-    height: 76px;
-    background-image: url(../images/footer-bgr.jpg);
-    background-repeat: repeat-x;
-    float: left;
-    margin-top: 10px;
-}
 
-.footer {
-    width: 960px;
-    margin: 0 auto;
-    padding-top: 10px;
+.copy {
+    float: left;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 5px;
+    text-decoration: none;
+    color: #9da9b0;
 }
 
 .link-bottom {
-    width: 370px;
     float: right;
-    margin-top: 8px;
-    text-align: right;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-right: 5px;
+}
+
+.link-bottom a img {
+    vertical-align: sub;
+    width: 18px;
+    padding-left: 0.25rem;
+}
+
+.link-bottom span {
+    text-decoration: none;
+    color: #9da9b0;
 }
 
 .link-bottom a,
 .pagination a {
     text-decoration: none;
     color: #9da9b0;
+}
+
+.tele-link a {
+    text-decoration: none;
+    color: #9da9b0;
+}
+
+.tele-link a:hover {
+    text-decoration: none;
+    color: #ffffff;
 }
 
 .link-bottom a:hover,
