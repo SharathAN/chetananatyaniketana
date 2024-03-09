@@ -1,8 +1,10 @@
 window.onload = function () {
     loadHeader();
     loadFooter();
+    setTimeout(loadingAnimation, 100);
 };
 // san
+
 function loadHeader() {
     var xhr = new XMLHttpRequest();
     xhr.open('GET', './Header.html', true);
@@ -23,6 +25,10 @@ function loadFooter() {
         }
     };
     xhr.send();
+}
+
+function loadingAnimation(){
+    document.getElementById("loading").style.display = "none";
 }
 
 function highlightTabElement(elementId) {
