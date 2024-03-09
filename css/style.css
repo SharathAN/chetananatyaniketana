@@ -325,8 +325,10 @@ h3 {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5); /* Adjust the alpha value for the desired opacity */
-    backdrop-filter: blur(10px); /* Adjust the blur radius */
+    background-color: rgba(0, 0, 0, 0.6); /* Adjust the alpha value for the desired opacity */
+    backdrop-filter: blur(50px); /* Adjust the blur radius */
+    opacity: 1;
+    transition: opacity 0.5s ease-out;
     position: fixed;
     display: block;
     z-index: 99;
